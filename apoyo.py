@@ -24,3 +24,10 @@ def mostrar_mensaje(mensaje):  # Aquí mensaje es recibido como parámetro
 def ingresar_texto(mensaje):
     texto = input(mensaje)
     return texto
+
+# INGRESAR ENTERO
+
+
+def ingresar_entero(mensaje):
+    entero = int(input(mensaje))
+    return entero
