@@ -7,7 +7,6 @@ Licencia GNU GPL v3
 Rec
 ursos de información: https://www.youtube.com/@infraestructura-linux-programa
 """
-from apoyo import mostrar_mensaje
 
 
 def main():
@@ -24,6 +23,10 @@ def ingresar_texto(mensaje):
 def generar_mensaje_bienvenida(nombre):
     mensaje = f"Bienvenid@ {nombre} a la tienda"
     return mensaje
+
+
+def mostrar_mensaje(mensaje):
+    print(mensaje)
 
 
 main()
