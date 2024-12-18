@@ -31,3 +31,10 @@ def ingresar_texto(mensaje):
 def ingresar_entero(mensaje):
     entero = int(input(mensaje))
     return entero
+
+# INGRESAR REAL
+
+
+def ingresar_real(mensaje):
+    valor = float(input(mensaje))
+    return valor
