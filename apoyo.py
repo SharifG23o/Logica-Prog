@@ -38,3 +38,17 @@ def ingresar_entero(mensaje):
 def ingresar_real(mensaje):
     valor = float(input(mensaje))
     return valor
+
+
+# CALCULAR PROMEDIO
+
+def calcular_promedio(valor1, valor2, valor3, valor4, valor5):
+    promedio = (valor1+valor2+valor3+valor4+valor5)/5
+    return promedio
+
+# DETERMINAR SALARIO EMPLEADO
+
+
+def calcular_salario_empleado(horas_trabajadas, valor_hora):
+    salario = horas_trabajadas*valor_hora
+    return salario
