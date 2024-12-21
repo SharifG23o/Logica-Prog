@@ -1,5 +1,6 @@
 """
 Programa para calcular el salario de un empleado
+Autor: Julián Esteban Gutiérrez 
 Estudiante: Sharif Giraldo Obando
 Fecha: Diciembre de 2024
 Licencia GNU GPL v3
