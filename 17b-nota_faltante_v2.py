@@ -2,7 +2,6 @@
 Programa que calcula la cuarta nota de un curso
 que emplea un promedio aritmético
 considerando los descuentos por salud y pensión
-para llevar un pedido
 Autor: Julián Esteban Gutiérrez
 Estudiante: Sharif Giraldo Obando
 Fecha: Diciembre de 2024
