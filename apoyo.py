@@ -52,3 +52,13 @@ def calcular_promedio(valor1, valor2, valor3, valor4, valor5):
 def calcular_salario_empleado(horas_trabajadas, valor_hora):
     salario = horas_trabajadas*valor_hora
     return salario
+
+
+# OBTENER MAYOR
+
+def obtener_mayor(a, b):
+    mayor = a
+    if b > mayor:
+        mayor = b
+
+    return mayor
