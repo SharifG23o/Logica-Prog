@@ -29,14 +29,26 @@ def ingresar_texto(mensaje):
 
 
 def ingresar_entero(mensaje):
-    entero = int(input(mensaje))
-    return entero
+    repetir = True
+    while repetir:
+        try:
+            valor = int(input(mensaje))
+            repetir = False
+        except:
+            print("No es una entrada válida para un número entero")
+    return valor
 
 # INGRESAR REAL
 
 
 def ingresar_real(mensaje):
-    valor = float(input(mensaje))
+    repetir = True
+    while repetir:
+        try:
+            valor = float(input(mensaje))
+            repetir = False
+        except:
+            print("No es una entrada válida para un número real")
     return valor
 
 
