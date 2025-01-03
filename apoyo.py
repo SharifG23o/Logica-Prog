@@ -74,3 +74,30 @@ def obtener_mayor(a, b):
         mayor = b
 
     return mayor
+
+
+# INGRESAR REAL RANGO
+
+
+def ingresar_real_rango(mensaje, valor_minimo, valor_maximo):
+    repetir = True
+    while repetir:
+        valor = ingresar_real(mensaje)
+        if valor < valor_minimo or valor > valor_maximo:
+            print(f"El valor no está entre {valor_minimo} y {valor_maximo} ")
+        else:
+            repetir = False
+    return valor
+
+
+# INGRESAR ENTERO RANGO
+
+def ingresar_entero_rango(mensaje, valor_minimo, valor_maximo):
+    repetir = True
+    while repetir:
+        valor = ingresar_entero(mensaje)
+        if valor < valor_minimo or valor > valor_maximo:
+            print(f"El valor no está entre {valor_minimo} y {valor_maximo} ")
+        else:
+            repetir = False
+    return valor
