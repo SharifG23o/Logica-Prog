@@ -101,3 +101,17 @@ def ingresar_entero_rango(mensaje, valor_minimo, valor_maximo):
         else:
             repetir = False
     return valor
+
+
+# INGRESAR ENTERO MAYOR QUE 
+
+def ingresar_entero_mayor_que(mensaje, valor_minimo):
+    repetir = True
+    while repetir:
+        valor = ingresar_entero(mensaje)
+        if valor <= valor_minimo:
+            print(f"El valor no es mayor que {valor_minimo}")
+
+        else:
+            repetir = False
+    return valor
