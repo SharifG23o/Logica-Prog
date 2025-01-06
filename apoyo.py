@@ -103,7 +103,7 @@ def ingresar_entero_rango(mensaje, valor_minimo, valor_maximo):
     return valor
 
 
-# INGRESAR ENTERO MAYOR QUE 
+# INGRESAR ENTERO MAYOR QUE
 
 def ingresar_entero_mayor_que(mensaje, valor_minimo):
     repetir = True
@@ -115,3 +115,17 @@ def ingresar_entero_mayor_que(mensaje, valor_minimo):
         else:
             repetir = False
     return valor
+
+
+# TABLA DE MULTIPLICAR
+
+def generar_mensaje_tabla_multiplicar(numero_tabla, minimo_valor, maximo_valor):
+    mensaje_tabla = f"\n TABLA DE MULTIPLICAR DEL {numero_tabla} \n \n"
+    i = minimo_valor
+    while i <= maximo_valor:
+        producto = numero_tabla*i
+        mensaje_tabla += f"{numero_tabla:2d} x {i:2d} = {producto:3d} \n"
+        i += 1
+    return mensaje_tabla
+
+
