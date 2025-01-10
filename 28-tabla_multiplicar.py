@@ -12,7 +12,7 @@ from apoyo import ingresar_entero_rango,generar_mensaje_tabla_multiplicar,mostra
 
 
 MINIMO_VALOR_TABLA = 0
-MAXIMO_VALOR_TABLA = 20
+MAXIMO_VALOR_TABLA = 10
 
 MINIMA_TABLA = 0
 MAXIMA_TABLA = 20
