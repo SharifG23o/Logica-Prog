@@ -129,3 +129,21 @@ def generar_mensaje_tabla_multiplicar(numero_tabla, minimo_valor, maximo_valor):
     return mensaje_tabla
 
 
+
+#VERIFICAR ES VOCAL
+
+
+
+def verificar_es_vocal(letra):
+    es_vocal = letra.lower() in "aeiou"
+    return es_vocal
+
+
+#VERIFICAR ES VOCAL V2
+
+def verificar_es_vocal2(letra):
+    letra= letra.lower()
+    es_vocal= letra=="a" or letra=="e" or letra=="i" or letra=="o" or letra=="u"
+    return es_vocal
+
+
