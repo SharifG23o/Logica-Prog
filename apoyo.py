@@ -147,3 +147,27 @@ def verificar_es_vocal2(letra):
     return es_vocal
 
 
+
+# INGRESAR TEXTO LONGITUD
+
+
+def ingresar_texto_longitud(mensaje, longitud):
+
+  repetir=True
+
+  while repetir:
+     
+     texto= ingresar_texto(mensaje)
+     if len(texto) != longitud:
+        print(f"El número no tiene una longitud de {longitud}")
+
+     else:
+
+
+        repetir= False
+
+  return texto
+     
+     
+
+
