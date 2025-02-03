@@ -1,5 +1,5 @@
 """
-Programa que 
+Programa que determina los códigos ASCII usados
 Autor: Julián Esteban Gutiérrez
 Estudiante: Sharif Giraldo Obando
 Fecha: Enero de 2025
