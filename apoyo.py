@@ -7,6 +7,15 @@ Licencia GNU GPL v3
 Recursos de información: https://www.youtube.com/@infraestructura-linux-programa
 """
 
+USAR_TK= True
+
+if USAR_TK:
+    from tkinter import Tk, messagebox, simpledialog
+    tk = Tk()
+    tk.geometry("0x0")
+
+
+
 # MOSTRAR MENSAJE
 
 
@@ -16,26 +25,51 @@ def mostrar_mensaje(mensaje):  # Aquí mensaje es recibido como parámetro
     Parámetros:
     -Mensaje a mostrar
     """
-    print(mensaje)  # El parámetro es impreso
+    if USAR_TK:
+        messagebox.showinfo("Información", mensaje)
+
+    else:
+        print(mensaje)  # El parámetro es impreso
+
+
+# MOSTRAR ERROR
+
+def mostrar_error(mensaje):  # Aquí mensaje es recibido como parámetro
+
+    if USAR_TK:
+        messagebox.showerror("Error", mensaje)
+
+    else:
+        print(mensaje)  # El parámetro es impreso
+
 
 
 # INGRESAR TEXTO
 
 def ingresar_texto(mensaje):
-    texto = input(mensaje)
+
+    
+    if USAR_TK:
+        texto = simpledialog.askstring("Entrada", mensaje)
+    else:
+
+        texto = input(mensaje)
     return texto
 
 # INGRESAR ENTERO
 
 
 def ingresar_entero(mensaje):
+
+
+
     repetir = True
     while repetir:
         try:
-            valor = int(input(mensaje))
+            valor = int(ingresar_texto(mensaje))
             repetir = False
         except:
-            print("No es una entrada válida para un número entero")
+            mostrar_error("No es una entrada válida para un número entero")
     return valor
 
 # INGRESAR REAL
@@ -45,10 +79,10 @@ def ingresar_real(mensaje):
     repetir = True
     while repetir:
         try:
-            valor = float(input(mensaje))
+            valor = float(ingresar_texto(mensaje))
             repetir = False
         except:
-            print("No es una entrada válida para un número real")
+            mostrar_error("No es una entrada válida para un número real")
     return valor
 
 
@@ -84,7 +118,7 @@ def ingresar_real_rango(mensaje, valor_minimo, valor_maximo):
     while repetir:
         valor = ingresar_real(mensaje)
         if valor < valor_minimo or valor > valor_maximo:
-            print(f"El valor no está entre {valor_minimo} y {valor_maximo} ")
+            mostrar_error(f"El valor no está entre {valor_minimo} y {valor_maximo} ")
         else:
             repetir = False
     return valor
@@ -97,7 +131,7 @@ def ingresar_entero_rango(mensaje, valor_minimo, valor_maximo):
     while repetir:
         valor = ingresar_entero(mensaje)
         if valor < valor_minimo or valor > valor_maximo:
-            print(f"El valor no está entre {valor_minimo} y {valor_maximo} ")
+            mostrar_error(f"El valor no está entre {valor_minimo} y {valor_maximo} ")
         else:
             repetir = False
     return valor
@@ -110,7 +144,7 @@ def ingresar_entero_mayor_que(mensaje, valor_minimo):
     while repetir:
         valor = ingresar_entero(mensaje)
         if valor <= valor_minimo:
-            print(f"El valor no es mayor que {valor_minimo}")
+            mostrar_error(f"El valor no es mayor que {valor_minimo}")
 
         else:
             repetir = False
@@ -159,7 +193,7 @@ def ingresar_texto_longitud(mensaje, longitud):
      
      texto= ingresar_texto(mensaje)
      if len(texto) != longitud:
-        print(f"El número no tiene una longitud de {longitud}")
+        mostrar_error(f"El número no tiene una longitud de {longitud}")
 
      else:
 
